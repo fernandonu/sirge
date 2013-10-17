@@ -1,0 +1,132 @@
+html{
+	margin:0px;
+}
+body { 
+	text-align:center;
+}
+
+.cuerpo{
+	position:relative;
+	margin:0 auto 0 auto; 
+	width:900px; 
+	text-align:left;
+}
+
+.login{
+	position:absolute;
+	border:solid 1px;
+	width:300px;
+	left:300px;
+	top:100px;
+}
+
+.msj_error{
+	color:#E61A00;
+}
+
+.saludo{
+	text-align:center;
+}
+.botonera{
+	text-align:center;
+}
+
+.menu{
+	position:absolute;
+	top:100px;
+	left:0px;
+	font-family:Tahoma, Geneva, sans-serif;
+	width:150px;
+	border: 1px solid #ACCFE8;
+	border-width: 1px 1px 0 1px;
+	font-size:15px;
+}
+
+.menu li{
+	border-bottom: 1px solid #ACCFE8;
+}
+
+.menu ul{
+	margin:0px;
+	padding:0px;
+}
+
+.menu ul li{
+	list-style-type:none;
+}
+
+a{
+	text-decoration:none;
+	color:#ffffff;
+}
+
+.menu a{
+	display:block;
+	text-decoration:none;
+	color:#2588de;
+	background: #F0F7FC;
+	padding: 3px 6px;
+	width: 150px;
+}
+
+.menu a:hover{
+	background:#DBEBF6;
+}
+
+.banner_grande{
+	position:absolute;
+	width:900px;
+	height:70px;
+	background-color:#2588de;
+	color:#ffffff;
+	font-family:Helvetica, Tahoma, Geneva, sans-serif;
+}
+
+.banner_texto{
+	position:absolute;
+	top:15px;
+	left:750px;
+	font-size:30px;
+	text-align:right;
+	vertical-align:baseline;
+}
+
+.banner_peque{
+	font-size:13px;
+	position:absolute;
+	top:75px;
+	width:900px;
+	height:15px;
+}
+
+.cerrar_session{
+	position:absolute;
+	top:75px;
+	left:870px;
+}
+
+.cerrar_session img{
+	width:30px;
+	border:0px;
+}
+
+
+.footer{
+	position:absolute;
+	top:1000px;
+	width:900px;
+	border:solid 1px;
+	font-size:11px;
+	text-align:center;
+	background-color:#2588de;
+	color:#ffffff;
+}
+
+
+.carga_sirge{
+	position:absolute;
+	top:200px;
+	left:200px;
+	width:700px;
+	border:solid 1px;
+}

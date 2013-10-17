@@ -1,0 +1,107 @@
+<style>
+	p, dl { font-family: "Trebuchet MS"; font-size: 12px; }
+	.help-remarcar { font-weight: bold; color: #1E90FF; }
+	.help-titulo, dl > dt { text-decoration: underline; font-style: italic; }
+</style>
+<p>
+	<span class="help-titulo">Ayuda para generar consultas de forma correcta: </span><br />
+	<dl>
+		<dt>Provincia a consultar:</dt>
+		<dd>Se debe seleccionar la provincia desde la cual se quiere extraer informaci&oacute;n</dd>
+
+		<dt>Padr&oacute;n a consultar:</dt>
+		<dd>
+			Las opciones son: <br />
+			<ul>
+				<li>Prestaciones</li>
+				<li>Aplicaci&oacute;n de fondos</li>
+				<li>Comprobantes</li>
+				<li>Nomencladores (proximamente)</li>
+			</ul>
+		</dd>
+		<dt>Campo</dt>
+		<dd>Se muestran todos los campos correspondientes a los padrones, dependiendo del seleccionado</dd>
+		<dt>Criterio de b&uacute;squeda</dt>
+		<dd>
+			<dl>
+				<dt>Igual</dt>
+				<dd>
+					Utilce este cirterio cuando desea buscar un <span class="help-remarcar">&uacute;nico valor</span><br />
+					Ej: Si ud. desea buscar los registros cuyos CUIE sean "V03630", deber&aacute; seleccionar "CUIE" como campo de b&uacute;squeda e ingresar en el campo "Valor a buscar" la expresi&oacute;n "V03630". <br />
+					Debe tener en cuenta que ingresando la expresi&oacute;n "V0363", <span class="help-remarcar">no devolver&aacute;</span> como resultado los registros cuyos CUIE sean "V03630", ya que este tipo de b&uacute;squeda solo retorna los registros que coinciden exactamente con el valor buscado <br />
+				</dd>
+				<dt>Distinto</dt>
+				<dd>
+					Utilce este cirterio cuando desea buscar todos los valores, que <span class="help-remarcar">sean distintos</span> a la expresi&oacute;n dada. <br />
+					Ej: Si ud. desea buscar los registros cuyos CUIE <span class="help-remarcar">NO</span> sean "V03630", deber&aacute; seleccionar "CUIE" como campo de b&uacute;squeda e ingresar en el campo "Valor a buscar" la expresi&oacute;n "V03630".
+				</dd>
+				<dt>Mayor que</dt>
+				<dd>
+					Utilce este cirterio cuando desea buscar todos los valores, que <span class="help-remarcar">sean mayores</span> a la expresi&oacute;n dada. <br />
+					Ej: Si ud. desea filtrar todas las prestaciones mayores al 28 de Enero de 2010, debe ingresar '2010-01-28' (Formato: A&ntilde;o - Mes - D&iacute;a), lo que retornar&aacute; todos los registros que sean mayores al 28 de Enero de 2010, <span class="help-remarcar">no inclusive</span>.
+				</dd>
+				<dt>Mayor o igual que</dt>
+				<dd>
+					Utilce este cirterio cuando desea buscar todos los valores, que sean <span class="help-remarcar">mayores o iguales</span> a la expresi&oacute;n dada. <br />
+					Ej: Si ud. desea filtrar todas las prestaciones mayores o iguales al 28 de Enero de 2010, debe ingresar '2010-01-28' (Formato: A&ntilde;o - Mes - D&iacute;a), lo que retornar&aacute; todos los registros que sean mayores o iguales al 28 de Enero de 2010, <span class="help-remarcar">inclusive</span>.
+				</dd>
+				<dt>Menor que</dt>
+				<dd>
+					Utilce este cirterio cuando desea buscar todos los valores, que sean <span class="help-remarcar">menores</span> a la expresi&oacute;n dada. <br />
+					Ej: Si ud. desea filtrar todas las prestaciones menores al 28 de Enero de 2010, debe ingresar '2010-01-28' (Formato: A&ntilde;o - Mes - D&iacute;a), lo que retornar&aacute; todos los registros que sean menores al 28 de Enero de 2010, <span class="help-remarcar">no inclusive</span>.
+				</dd>
+				<dt>Menor o igual que</dt>
+				<dd>
+					Utilce este cirterio cuando desea buscar todos los valores, que sean <span class="help-remarcar">menores o iguales</span> a la expresi&oacute;n dada. <br />
+					Ej: Si ud. desea filtrar todas las prestaciones menores o iguales al 28 de Enero de 2010, debe ingresar '2010-01-28' (Formato: A&ntilde;o - Mes - D&iacute;a), lo que retornar&aacute; todos los registros que sean menores al 28 de Enero de 2010, <span class="help-remarcar">inclusive</span>.
+				</dd>
+				<dt>Entre</dt>
+				<dd>
+					Utilce este cirterio cuando desea buscar todos los valores <span class="help-remarcar"> entre el rango dado </span>. <br />
+					Ej: Si ud. desea filtrar los registros entre el 14 de Julio y el 14 de Agosto de 2011, deber&aacute; ingresar 2011-07-14,2011-08-14 (<span class="help-remarcar">utilizando el caracter ',' (coma), como separador de expresiones</span>)
+				</dd>
+				<dt>Contiene a</dt>
+				<dd>
+					Utilce este cirterio cuando desea buscar todos los valores que contengan a la expresi&oacute;n dada. <br />
+					Ej: Si ud. desea encontrar todos los registros cuyas claves de beneficiario contengan el N&deg; "<span class="help-remarcar">123456</span>", deber&aacute; ingresar esa expresi&oacute; como criterio de b&uacute;squeda. <br />
+					Los valores devueltos pueden ser de los siguientes tipos: <br />
+						<ul>
+							<li>Encuentra el valor al principio de la cadena de b&uacute;squeda : <span class="help-remarcar">123456</span>789890</li>
+							<li>Encuentra el valor dentro de la cadena de b&uacute;squeda : 06<span class="help-remarcar">123456</span>7854</li>
+							<li>Encuentra el valor al final de la cadena de b&uacute;squeda : 085498<span class="help-remarcar">123456</span></li>
+						</ul>
+				</dd>
+				<dt>En</dt>
+				<dd>
+					Utilce este cirterio cuando desea buscar todos los valores de <span class="help-remarcar">varias expresiones</span> que afecten a un mismo campo. <br />
+					Ej: Si ud. desea buscar los registros cuyos CUIE sean "X00407" y "X00510", deber&aacute; ingresar X00407,X00510 (<span class="help-remarcar">utilizando el caracter ',' (coma), como separador de expresiones</span>). Tenga en cuenta que se pueden ingresar la cantidad de expresiones que ud. crea conveniente
+				</dd>
+				<dt>No en</dt>
+				<dd>
+					Utilce este cirterio cuando desea buscar todos los valores que <span class="help-remarcar">no coincidan</span> con varias expresiones que afecten a un mismo campo. <br />
+					Ej: Si ud. desea buscar los registros cuyos CUIE NO sean "X00407" y "X00510", deber&aacute; ingresar X00407,X00510 (<span class="help-remarcar">utilizando el caracter ',' (coma), como separador de expresiones</span>). Tenga en cuenta que se pueden ingresar la cantidad de expresiones que ud. crea conveniente
+				</dd>
+			</dl>
+		</dd>
+		<dt>Valor a buscar</dt>
+		<dd>Es la expresi&oacute;n que se desea encontrar</dd>
+		<dt>Condici&oacute;n</dt>
+		<dd>
+			Las opciones son "<span class="help-remarcar">Y</span>" u "<span class="help-remarcar">O</span>". Al seleccionar cualquiera de las 2, una nueva l&iacute;nea para realizar filtros ser&aacute; agregada. <br />
+			Desmotramos su uso con 2 ejemplos: <br />
+			<dl>
+				<dt>Uso del <span class="help-remarcar">O</span></dt>
+				<dd>
+					Supongamos que queremos buscar las prestaciones del efector "X00510" y "X00407", deber&iacute;amos ingresar 2 l&iacute;neas, utilizando la condici&oacute;n "<span class="help-remarcar">O</span>", ya que al aplicar el filtro de la primer l&iacute;nea, nos devuelve los registros cuyas prestaciones corresponden al efector "X00510", 
+					luego por haber seleccionado "<span class="help-remarcar">O</span>" como condici&oacute;n l&oacute;gica, se vuelve a realizar el filtro sobre la base entera y nos devuelve los registros, cuyo efector sea "X00407" <br />
+					Si en cambio hubi&eacute;semos elegido "<span class="help-remarcar">Y</span>" como condici&oacute;n l&oacute;gica, lo que hubiese pasado ser&iacute;a filtrar primero por el CUIE "X00510" y sobre esos registros, filtrar por "X00407", lo que devolver&iacute;a 0 registros. <br />
+				</dd>
+				<dt>Uso del <span class="help-remarcar">Y</span></dt>
+				<dd>
+					Supongamos que queremos buscar las prestaciones cuyo efector sea "X00510" y adem&aacute;s que pertenezcan al mes de Febrero de 2011. <br />
+					Deber&iacute;amos aplicar 2 filtros, el primero que referencie a todos los registros cuyos CUIE sean "X00510" <span class="help-remarcar">Y</span> el otro, que filtre el rango de fechas entre 2011-02-01 - 2011-02-28 <br />
+				</dd>
+			</dl>
+		</dd>
+	</dl>
+</p>

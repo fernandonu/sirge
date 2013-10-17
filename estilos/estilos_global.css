@@ -1,0 +1,241 @@
+html { border: 0px;	margin: 0px; padding: 0px; }
+body { margin: 0px; background-color: #F0EEEE; font-family: "Trebuchet MS"; }
+table, th, td, tr {	border-collapse: collapse; font-size: 12px; font-family: "Trebuchet MS"; }
+th { background-color: rgb(250,169,81); color : #000; border-radius: 3px; }
+a { text-decoration: none; color: #000000; }
+
+.login-principal {
+	width: 900px;
+	height: 400px;
+	border: solid 0px #ccc;
+	margin: 100px auto;
+	background-color: #00AEEF;
+}
+
+.login-header-sumar img {
+	width: 900px;
+	
+}
+.login-logo-sumar {
+	position: absolute;
+}
+.login-form {
+	width: 200px;
+	position: relative;
+	left: 650px;
+	top: 80px;
+	text-align: center;
+}
+
+.input-login { height: 30px; color: #CCCCCC; font-style: italic; font-size: 12px; margin: 5px; width: 120px; }
+.submit-login { width: 100px; margin: 5px;}
+
+.banner_grande { width: 100%; height: 70px; background-color: rgb(0,155,223); text-align: right; }
+.banner_grande a { text-decoration: none; color: white; font-size: 30px; line-height: 60px; margin-right: 20px; }
+.banner_peque { position: relative; font-size: 11px; width: 900px; height: 25px; margin: 0px auto; }
+.mini_hello { vertical-align: middle; }
+.banner_peque a	img { height: 21px; margin: 2px; position: absolute; left: 877px; }
+
+/**
+	Contenedor principal
+*/
+.principal { 
+	position: relative; 
+	width: 900px; 
+	height: 1200px; 
+	margin: 0px auto; 
+	border-top: solid 1px #ccc;	
+	border-left: solid 1px #ccc; 
+	border-right: solid 1px #CCCCCC; 
+	background-color: white;
+	}
+
+/**
+	Menú izquierdo
+*/
+.menu {	position: absolute; width: 152px; font-size: 13px; }
+.menu ul { margin: 0px; padding: 0px; line-height: 35px; width: 152px; }
+.menu ul li { list-style-type: none; }
+.menu li div { display: block; text-decoration: none; padding-left: 5px; cursor: pointer; }
+.menu-padre { color: #009BDF; }
+
+.menu div:hover, .activo { background-color: rgb(0,155,223); color: white; }
+.subnavegador li { border-top: 1px solid #CCCCCC; font-size: 11px; line-height: 20px; }
+
+
+
+/**
+	Contenedor central
+*/							
+#show {	position: relative; width: 748px; height: 1200px; left: 152px; border-left: solid 1px #CCCCCC; }
+
+
+.bienvenida { text-align: center; font-size: 20px; line-height: 20px; }
+.hello { font-size: 25px; letter-spacing: 2px; line-height: 100px; }
+
+.no_sel { background-color: #DBEBF6; }
+.sel { background-color: #FAA951; }
+
+.consultas-areas dt { line-height: 25px; border-radius: 3px; margin-bottom: 5px; cursor: pointer; padding-left: 5px; }
+.consultas-areas dd { margin-bottom: 5px; padding-left: 10px; margin-left: 0px; }
+.consultas-areas dt:hover { background-color: #FAA951; }
+.consultas-areas img { cursor: pointer; height: 20px;}
+
+.consulta-areas-paginado , .listado-lotes-paginado {display: table; margin: 0px auto; }
+.consulta-areas-paginado span , .listado-lotes-paginado span { padding: 5px; margin: 2px; text-align: center; cursor: pointer; }
+.consulta-areas-paginado span:hover , .listado-lotes-paginado span:hover { background-color: #FAA951; }
+
+.pag_activa { color: white; background-color: rgb(0,155,223); }
+
+.footer { margin: 0px auto; border: solid 1px; font-size: 11px; text-align: center; background-color: rgb(0,155,223); color: #FFFFFF; border-radius: 3px; }
+
+.datos-usuario { width: 600px; position: relative; top: 20px; margin: 0px auto; font-size: 12px; }
+
+.datos-usuario td { padding: 5px; height : 50px; }
+.datos-usuario img, .lista-areas img, .adm-usr img { height: 20px; position: relative; top: 5px; margin-left: 5px; }
+
+#sugerencia { width: 600px; text-align: center; margin: 0px auto; height: 400px; position: relative; top: 20px; }
+#sugerencia div { border-radius: 3px; width: 400px; margin: 0px auto; margin-bottom: 10px; background-color: rgb(0,155,223); color: white; }
+#sugerencia input , textarea { margin-bottom : 10px; }
+
+.sub-modulos { width: 740px; }
+	
+.tabla-q-din-sup th , .tabla-q-din-sup tr , .tabla-q-din-inf th , .tabla-q-din-inf tr { height: 35px; padding: 3px;}
+
+.campo	{ width: 160px; }
+.criterio { width: 140px; }
+.valor { width: 310px; }
+.logica { width: 78px; }
+
+
+.cambia-pass td , .cambia-email td { padding: 5px; line-height: 30px; text-align: center; }
+
+.adm-usr { margin: 0px auto; position: relative; top: 20px; width: 700px; }
+
+.adm-usr a:hover , .data-queries a:hover , .lista-areas a:hover { color: rgb(0,155,223); }
+.adm-usr tbody tr:hover { background-color: #DBEBF6 }
+
+.modif-usu tr {	text-align: center; height: 30px; }
+.modif-usu input , .modif-usu select { font-size: 12px; }
+
+.baja-usr-adm { text-align: center; font-size: 11px; }
+.baja-usr-adm span { color: blue; }
+.baja-usr-adm input { font-size : 11px; }
+
+.error { background-color: red; padding: 5px; color: white; margin: 5px; }
+
+.div-tree-menu input, .div-tree-menu select { font-size: 12px; }
+.div-tree-menu { width: 500px; margin: 0px auto; position: relative; top: 20px; }
+
+.tree-menu td , .sub-tree-menu td { width: 250px; text-align: center; }
+
+
+.alta-usu { width: 450px; text-align: center; margin: 0px auto; }
+
+.datos-usuario tr , 
+.tabla-q-din-sup tr , 
+.tabla-q-din-inf tr , 
+.tree-menu tr , 
+.sub-tree-menu tr , 
+.data-queries tbody tr , 
+.lista-areas tbody tr ,
+.areas-queries tr ,
+.edit-areas tr ,
+.cambia-pass tr , 
+.cambia-email tr , 
+.alta-usu tr , 
+.adm-usr tbody tr , 
+.modif-usu tr
+{ border-bottom: solid 1px #CCCCCC; height: 40px; } 
+
+.listado-subidas-puco table tr {
+	border-top: solid 1px #ccc;
+	height: 30px;
+}
+
+.listado-subidas-puco img {
+	height: 25px;
+}
+
+
+.data-queries , .areas-queries , .lista-areas { margin: 0px auto; }
+.areas-queries { margin-bottom: 10px; }
+
+.lista-areas { width: 400px; }
+.lista-areas tr , .data-areas tr { text-align: center; }
+
+.div-input { width: 100%; text-align: center; position: relative; top: 20px; margin-bottom: 40px; }
+
+.data-queries tbody tr td:first-child { width: 400px; }
+
+.data-queries tbody tr td:nth-child(2) { width: 100px; text-align: center; }
+
+.data-queries tbody tr td:nth-child(3) , 
+.data-queries tbody tr td:nth-child(4) ,
+.data-queries tbody tr td:nth-child(5) { width: 40px; font-size: 10px; text-align: center; }
+
+.listado-procesos-osp , .formulario-subida-datos , .listado-archivos-subidos, .listado-subidas-puco { display: table; margin: 0px auto; position: relative; top: 20px; }
+.formulario-subida-datos table { width: 600px; text-align : center; }
+.formulario-subida-datos table tbody tr { height: 50px; }
+
+.comprobantes th {background-color: rgb(153,204,95);}
+
+.nombre_padron {font-weight: bold;}
+
+.listado-procesos-osp , .listado-archivos-subidos table , .listado-subidas-puco table { width: 600px; text-align: center; }
+.listado-procesos-osp tbody img , .listado-archivos-subidos tbody img { height: 20px; }
+.listado-procesos-osp tbody tr , .listado-archivos-subidos tbody tr { height: 30px; border-bottom: solid 1px #ccc; }
+
+
+#ocultar-alta {
+	font-size: 10px;
+	margin-left: 5px;
+}
+
+#ocultar-alta:hover {
+	cursor: pointer;
+	color: red;
+}
+
+.data-tabla-lotes { text-align: center; width: 650px; margin: 0px auto;}
+.data-tabla-lotes tr { height: 25px; border-bottom: solid 1px #ccc; }
+.data-tabla-lotes tr:hover { background-color: rgb(172,218,243); }
+.data-tabla-lotes tr td:first-child { font-weight: bold; }
+.data-lotes img { height: 20px; }
+
+.data-lotes { width: 700px; font-size: 12px;}
+.data-lotes dt { line-height: 25px; border-radius: 3px; margin-bottom: 7px; cursor: pointer; padding-left: 5px; }
+.data-lotes dd { margin-bottom: 5px; padding-left: 10px; margin-left: 0px; }
+.data-lotes dt:hover { background-color: rgb(0,155,223); color: white; }
+
+.Eliminado { border-radius: 3px; background-color: rgb(242,107,115); }
+.Cerrado { border-radius: 3px; background-color:  rgb(153,204,95); }
+.Procesado { border-radius: 3px; background-color:  rgb(250,169,81); }
+
+#tabla-busqueda-lotes { display: table; margin: 0px auto; }
+
+.consulta-puco { display: table; margin: 0px auto; position: relative; top: 20px; }
+.consulta-puco table { width: 600px; text-align: center; }
+.consulta-puco tbody tr { height: 50px; }
+
+#data_puco table { text-align: center; width: 450px; margin: 0px auto;}
+#data_puco table tr { height: 25px; border-bottom: solid 1px #ccc; }
+#data_puco table tr:hover { background-color: rgb(172,218,243); }
+
+
+.filtros_efectores { display: table; margin: 0px auto; }
+#listado-efectores , #listado-efectores-abm { display: table; margin: 0px auto; position: relative; top: 20px; text-align: center; }
+#listado-efectores table , #listado-efectores-abm table { width: 600px; }
+#listado-efectores table tbody tr , #listado-efectores-abm table tbody tr { height: 25px; border-bottom: solid 1px #ccc;}
+#listado-efectores table tbody tr:hover , #listado-efectores-abm table tbody tr:hover { background-color: rgb(172,218,243); }
+#listado-efectores img , #listado-efectores-abm img { height: 20px; }
+
+.filtro_superior , .filtro_inferior { width: 600px; text-align: center; margin: 0px auto; }
+.filtro_superior tbody tr , .filtro_inferior tbody tr { height: 40px; }
+
+.texto_resumen { background-color: rgb(250,169,81); color: #FFF; font-weight: bold; text-align: center; border: 1px solid; border-radius: 3px; width: 600px; display: table; margin: 0px auto; position: relative; top: 10px;}
+.tabla_resumen { position: relative; top: 40px; left: 10px;}
+.tabla_resumen dt { background-color: #DBEBF6; width: 400px; padding: 3px; margin-bottom: 5px; border-radius: 3px; cursor: pointer;}
+.tabla_resumen dt:hover {background-color: #FAA951;}
+
+.registros-rechazados:hover {cursor: pointer;}
